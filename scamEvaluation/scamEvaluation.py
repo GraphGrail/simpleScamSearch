@@ -14,7 +14,6 @@ class ScamEvaluation:
         parsedDoc = self._nlp(doc)
         if self._checkConfusionBetweenLatinLettersAndSpecialSymbols(parsedDoc):
             return 1.0
-        return 0
         tokens = []
         lemmatizedTokens = []
         for token in parsedDoc:
